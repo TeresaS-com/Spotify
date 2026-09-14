@@ -1,0 +1,20 @@
+body {
+    background-color: #121212;
+}
+
+nav {
+    min-height: 8dvh;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#spotify-logo-wrapper {
+    width: 8dvh;
+    height: hidden;
+}
+
+.Spotify-logos {
+    max-width: 30px;
+    max-height: 30px;
+    filter: invert(100%);
+}
