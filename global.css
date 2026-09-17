@@ -1,5 +1,9 @@
 body {
     background-color: #121212;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 #section-title {
@@ -24,12 +28,32 @@ nav {
     filter: invert(100%);
 }
 
+.spotify-body-layout {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* Aside bar */
+
+aside {
+    background-color: #242424;
+    border-radius: 10px;
+}
+
+.sidebar {
+    width: 350px;
+    padding: 20px;
+    box-sizing: border-box;
+    min-width: 20%;
+    max-width: 20%;
+
+}
+
 /* album grid */
 section {
     display: grid;
     grid-template-columns: repeat(8,1fr);
-    padding: 10px;
-   
 }
 
 .album-images {
@@ -57,13 +81,11 @@ section {
     font-family: "Helvetica Neue", Helvetica, Arial;
 }
 
-article {
-    width: 250px;
-}
-
 #div1 {
     background-color: #242424;
     border-radius: 10px;
+    min-width: 78%;
+    max-width: 78%;
 }
 
  
