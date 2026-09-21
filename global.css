@@ -37,7 +37,7 @@ nav {
 /* Aside bar */
 
 aside {
-    background-color: #242424;
+    background-color: #1b1a1a;
     border-radius: 10px;
 }
 
@@ -48,6 +48,10 @@ aside {
     min-width: 20%;
     max-width: 20%;
 
+}
+
+.playlist {
+    background-color: #242424;
 }
 
 /* album grid */
@@ -82,11 +86,27 @@ section {
 }
 
 #div1 {
-    background-color: #242424;
+    background-color: #1b1a1a;
     border-radius: 10px;
     min-width: 78%;
     max-width: 78%;
 }
 
+/* footer */
+
+footer {
+    align-content:center;
+    background-image: linear-gradient(to right, rgb(209, 45, 168), rgb(73, 144, 214));
+}
+
+.text-margin {
+    margin: 1px;
+    color: white;
+}
+
+.sign-up {
+    border-color: white;
+    background-color: white;
+}
  
 
