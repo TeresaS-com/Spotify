@@ -13,11 +13,11 @@ body {
 /* Nav */
 nav {
     min-height: 8dvh;
+    display: flex;
     flex-direction: row;
-    justify-content: space-around;
 }
 
-#spotify-logo-wrapper {
+#spotify-logo {
     width: 8dvh;
     height: hidden;
 }
@@ -31,33 +31,68 @@ nav {
 .spotify-body-layout {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
+}
+
+#search-bar {
+    background-color: #1b1a1a;
+
 }
 
 /* Aside bar */
 
 aside {
     background-color: #1b1a1a;
+    border: 10px solid #1b1a1a;
     border-radius: 10px;
+    width: 20%;
 }
 
-.sidebar {
-    width: 350px;
-    padding: 20px;
-    box-sizing: border-box;
-    min-width: 20%;
-    max-width: 20%;
-
+.add-icon {
+    filter: invert(100%);
+    height: 25px;
+    Width: 25px;
 }
 
-.playlist {
+#library {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    color: white;
+}
+
+.playlist-podcasts-box {
     background-color: #242424;
+    border:15px solid #242424;
+    border-radius: 10px;
+    margin: 20px;
+    color: white;
+}
+
+.border-button {
+    display: flex;
+    text-align: center;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 20px;
+    background-color: white;
+    width: 150px;
+    height: 20px;
+    color:black;
+}
+
+.bottom-links {
+    color:#7c7c7c;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
 }
 
 /* album grid */
 section {
     display: grid;
     grid-template-columns: repeat(8,1fr);
+    width: 78%;
 }
 
 .album-images {
@@ -69,20 +104,18 @@ section {
    border-radius: 10%;
 }
 
-/* Text alignment */
+/* Text alignment for albums */
 
 .album-text1 {
     color: white;
     text-align: left;
     margin: 5px 0 0 13px;
-    font-family: "Helvetica Neue", Helvetica, Arial ;
 }
 
 .album-text2 {
     color: #7c7c7c;
     text-align: left;
     margin: 5px 0 0 13px;
-    font-family: "Helvetica Neue", Helvetica, Arial;
 }
 
 #div1 {
@@ -97,6 +130,9 @@ section {
 footer {
     align-content:center;
     background-image: linear-gradient(to right, rgb(209, 45, 168), rgb(73, 144, 214));
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .text-margin {
@@ -105,8 +141,15 @@ footer {
 }
 
 .sign-up {
-    border-color: white;
     background-color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.footer-alignment {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
  
 
